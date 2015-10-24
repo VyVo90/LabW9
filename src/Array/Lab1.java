@@ -7,6 +7,8 @@ public class Lab1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	int []aryNums = new int[6];
+	int i;
+	int ave = 0;
 	
 	aryNums [0] = 123;
 	aryNums [1] = 456;
@@ -15,19 +17,15 @@ public class Lab1 {
 	aryNums [4] = 246;
 	aryNums [5] = 135;
 	
-	int i;
-	int aryTotal = 0;
-	int ave = 0;
-	
 	Arrays.sort(aryNums);
 	
 	for(i=0; i< aryNums.length;i++)
 	{
-		aryTotal = aryTotal + aryNums[i];
+		ave = ave + aryNums[i];
+		System.out.print(aryNums[i] + ", ");
 	}
 	
-	ave = aryTotal / 6;
-	System.out.println("Total: " + ave);
+	System.out.println("Total: " + (ave/6));
 	
 	}
 
